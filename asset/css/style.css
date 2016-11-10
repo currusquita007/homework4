@@ -1,0 +1,44 @@
+#hocTheme{
+	width: 800px;
+	padding-top: 20px ;
+	padding-left: 200px;
+	padding-bottom: 20px;	
+}
+
+#containerChar{
+    width: 170px;
+	padding: 10px 10px 10px 10px;
+	background-color: white;
+    box-sizing: border-box;
+}
+
+#row1{
+	padding-left: 80px;
+}
+
+#francis {
+	width: 130px;
+}
+
+#claire {
+	width: 130px;
+}
+
+#zoe {
+	width: 130px;
+}
+
+#russo {
+	width: 130px;
+}
+
+#doug {
+	width: 130px;
+}
+
+.letter { width: 30px; height:30px; 
+	border-style: solid; 
+	padding: 2px; 
+	float: left; 
+	margin: 2px; 
+}
