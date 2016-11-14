@@ -1,91 +1,128 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>House of Cards Game</title>
 
-<script src="asset/javascript/gameHOC.js"></script>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
 
 <link rel="stylesheet" type="text/css" href="asset/css/reset.css">
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
 
 <link rel="stylesheet" type="text/css" href="asset/css/style.css">
+
+<title>House of Cards Game</title>
+
 </head>
+
 <body background="asset/images/stardust.png">
-    <div class="container">
+
+ <div class="container">
 	    <div class="row">
 			<img id ="hocTheme" alt = "HOC" src="asset/images/gameTheme.png">
 			
 		</div>
 
         <div class="row" id= "row1">
+
 				<div class="col-md-2 thumbnail">
-					<div class="container" id="containerChar">
+					<div class="container2" id="francisContainer"> 
 						<img id ="francis" alt = "francis" src="asset/images/Francis.png" class="img-circle">
-						<div class="caption"> <h4>francis</h4> </div> 
+						<p class="caption"> Francis </p> 
+						<p class="points" id="pointsFrancis"> 100 </p>
 					</div>
 				</div>
 
 				
 				<div class="col-md-2 thumbnail">
-					<div class="container" id="containerChar">
+					<div class="container2" id="claireContainer">
 						<img id ="claire" alt = "claire" src="asset/images/Claire.png" class="img-circle">
-						<div class="caption"> <h4>francis</h4> </div> 
+						<p class="caption"> Claire </p> 
+						<p class="points" id="pointsClaire"> 90 </p>
 					</div>
 				</div>
 
 				
 				<div class="col-md-2 thumbnail">
-					<div class="container" id="containerChar">
+					<div class="container2" id="zoeContainer">
 						<img id ="zoe" alt = "zoe" src="asset/images/Zoe.png" class="img-circle">
-						<div class="caption"> <h4>francis</h4> </div> 
+						<p class="caption"> Zoe </p> 
+						<p class="points" id="pointsZoe"> 60 </p>
 					</div>	
 				</div>
 
 								
 				<div class="col-md-2 thumbnail">
-					<div class="container" id="containerChar">
+					<div class="container2" id="russoContainer">
 						<img id ="russo" alt = "zoe" src="asset/images/Russo.png" class="img-circle">
-						<div class="caption"> <h4>francis</h4> </div> 
+						<p class="caption"> Russo </p> 
+						<p class="points" id="pointsRusso"> 60 </p>
 					</div>
 				</div>
 
 					
 				<div class="col-md-2 thumbnail">
-					<div class="container" id="containerChar">
+					<div class="container2" id="dougContainer">
 					    <img id ="doug" alt = "doug" src="asset/images/Doug.png" class="img-circle">
-					    <div class="caption"> <h4>francis</h4> </div> 
+					    <p class="caption"> Dough </p> 
+					    <p class="points" id="pointsDoug"> 80 </p>
 				    </div>
 			    </div>
+
+	        
 		</div>
 
-		<div class="row">
+		<div class="row" id="labelCharacter">
+            <h4>Your Character</h4>
+		</div>
 
-			<div class="col-md-12">
+		<div class="row defendersRow" id= "row3">
+			<div class="col-md-2 thumbnail">
+				<div class="container3 containerChar" id="defendersRow">
 
-				<div class="col-md-2 thumbnail">
-			
 				</div>
-				<div class="col-md-2 thumbnail">
-		
-				</div>
-				<div class="col-md-2 thumbnail">
-					
-				</div>
-				<div class="col-md-2 thumbnail">
-		
-				</div>
-				<div class="col-md-2 thumbnail">
-			    
-			    </div>
-
+			</div>
 		</div>
 
 
+		<div class="row labelCharacter">
+           <h4> Enemies Available to Attack </h4>
+		</div>
 
-    </div>
+		<div class="row labelCharacter">
+           <h4>Fight Section</h4>
+		</div>
+
+		<div class="row labelCharacter" id="attackBut">
+           <button>Attack</button>
+		</div>
+
+		<div class="row labelCharacter">
+            <h4>Defender</h4>
+		</div>
+
+		<div class="row" id= "row4">
+			<div class="col-md-2 thumbnail">
+				<div class="container3 containerChar" id="attackerRow">
+
+				</div>
+			</div>
+		</div>
+
+		<div class="row" id= "row5">
+				<div id="results">
+					<p id="pointsPlayer"> </p>
+					<p id="pointsDefender"> </p>
+				</div>
+		</div>
+
+  </div>
+  	
 
 
+  <!-- Linking to our JavaScript file. -->
+<script type="text/javascript" src="asset/javascript/gameold.js"></script>
 
 </body>
 </html>
